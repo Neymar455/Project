@@ -1,0 +1,13 @@
+body{
+    background-color: #CECCCF;
+}
+h1{height: 112px;background-color: #CECCCF;text-align: center;}
+.container{height: 520px;width: 1017px;margin: 0 auto;background-color: #fff;}
+.container .container_l{width: 506px;height: 520px;float: left;}
+.container .container_l img{margin-left: 85px;margin-top: 30px;}
+.container_r{height: 520px;width: 511px;float: left;}
+.container_r_t{height: 63px;line-height: 70px;}
+.container_r_t i{font-size: 15px;color:#9F9F9F;float: left;}
+.container_r_t i:nth-child(1){display: block;width: 64px;margin-left: 65px;margin-right: 130px;}
+.container_r_t i:nth-child(2){display: block;width: 80px;}
+.container_r_b{width: 400px;height: 438px;border: 1px solid #DCDCDC;}
