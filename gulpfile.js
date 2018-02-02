@@ -8,3 +8,11 @@ gulp.task('compileSass',function(){
 gulp.task('jtSass',function(){
     gulp.watch('./src/sass/login.scss',['compileSass'])
 })
+gulp.task('index',function(){
+    gulp.src('./src/sass/index.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./src/css/'))
+})
+gulp.task('jtindex',function(){
+    gulp.watch('./src/sass/index.scss',['index'])
+})

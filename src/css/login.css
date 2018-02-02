@@ -39,6 +39,37 @@ h1 {
         width: 80px; }
     .container .container_r .container_r_b {
       width: 400px;
-      height: 438px;
+      height: 435px;
       border: 1px solid #DCDCDC;
       margin-left: 8px; }
+      .container .container_r .container_r_b .container_r_b_t {
+        height: 350px;
+        padding-top: 31px;
+        padding-left: 36px; }
+        .container .container_r .container_r_b .container_r_b_t input {
+          height: 40px;
+          width: 324px;
+          border: 1px solid #DCDCDC;
+          border-radius: 5px;
+          margin-bottom: 24px; }
+        .container .container_r .container_r_b .container_r_b_t p {
+          font-size: 14px;
+          color: #9f9f9f;
+          padding-right: 38px; }
+          .container .container_r .container_r_b .container_r_b_t p i {
+            color: #E30165;
+            display: block;
+            float: right;
+            font-size: 12px; }
+        .container .container_r .container_r_b .container_r_b_t button {
+          width: 324px;
+          background-color: #E30165;
+          height: 44px;
+          margin-top: 24px;
+          color: #fff;
+          font-size: 16px; }
+      .container .container_r .container_r_b .container_r_b_b {
+        height: 85px;
+        font-size: 14px;
+        color: #9f9f9f;
+        padding-left: 36px; }
