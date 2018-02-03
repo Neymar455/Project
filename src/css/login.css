@@ -45,7 +45,12 @@ h1 {
       .container .container_r .container_r_b .container_r_b_t {
         height: 350px;
         padding-top: 31px;
-        padding-left: 36px; }
+        padding-left: 36px;
+        position: relative; }
+        .container .container_r .container_r_b .container_r_b_t i:nth-child(1) {
+          position: absolute;
+          right: 0;
+          top: 0; }
         .container .container_r .container_r_b .container_r_b_t input {
           height: 40px;
           width: 324px;
@@ -56,11 +61,12 @@ h1 {
           font-size: 14px;
           color: #9f9f9f;
           padding-right: 38px; }
-          .container .container_r .container_r_b .container_r_b_t p i {
+          .container .container_r .container_r_b .container_r_b_t p span {
             color: #E30165;
             display: block;
             float: right;
-            font-size: 12px; }
+            font-size: 12px;
+            margin-top: 3px; }
         .container .container_r .container_r_b .container_r_b_t button {
           width: 324px;
           background-color: #E30165;
@@ -73,3 +79,10 @@ h1 {
         font-size: 14px;
         color: #9f9f9f;
         padding-left: 36px; }
+        .container .container_r .container_r_b .container_r_b_b p {
+          line-height: 23px; }
+          .container .container_r .container_r_b .container_r_b_b p i {
+            font-size: 30px;
+            margin-right: 10px;
+            margin-left: 10px;
+            color: #E30165; }

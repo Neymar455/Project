@@ -45,8 +45,6 @@ body {
       line-height: 30px; }
     .right .right_b i:nth-child(5) {
       font-size: 12px; }
-      .right .right_b i:nth-child(5) p {
-        display: inline-block; }
 
 .top {
   height: 221px;
@@ -146,7 +144,12 @@ body {
       .top .top_b .container ul:last-child {
         float: right; }
         .top .top_b .container ul:last-child li:last-child {
-          color: #E30165; }
+          color: #E30165;
+          position: relative; }
+          .top .top_b .container ul:last-child li:last-child i {
+            top: -15px;
+            right: 10px;
+            position: absolute; }
 
 .banner {
   height: 430px;
@@ -162,7 +165,8 @@ body {
       background-color: #FFF; }
       .banner .container .choose ul li {
         height: 104px;
-        border-bottom: 1px solid #ccc; }
+        border-bottom: 1px solid #ccc;
+        position: relative; }
         .banner .container .choose ul li h3 {
           font-size: 20px;
           font-weight: bold;
@@ -174,3 +178,289 @@ body {
           padding-left: 10px;
           margin-top: 10px;
           padding-right: 35px; }
+        .banner .container .choose ul li i {
+          position: absolute;
+          font-size: 30px;
+          right: 15px;
+          top: 20px; }
+
+.goods {
+  width: 100%;
+  background-color: #FFECEB; }
+  .goods .goods1 {
+    width: 1080px;
+    margin: 0 auto;
+    padding-top: 10px;
+    position: relative; }
+    .goods .goods1 img:first-child {
+      float: left;
+      width: 188px;
+      height: 295px; }
+    .goods .goods1 ul {
+      float: left;
+      margin-left: 10px;
+      width: 800px; }
+      .goods .goods1 ul li {
+        float: left;
+        width: 105px;
+        height: 25px;
+        background-color: #FFF;
+        border: 1px solid #BBBBBB;
+        margin-right: 12px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+        color: #666666; }
+    .goods .goods1 .goods_b {
+      width: 882px;
+      height: 263px;
+      position: absolute;
+      right: 0;
+      top: 42px; }
+      .goods .goods1 .goods_b img {
+        width: 882px;
+        height: 263px; }
+  .goods .goods2 {
+    background-color: #E3E3E3;
+    width: 100%; }
+    .goods .goods2 .goods2_c {
+      width: 1080px;
+      margin: 0 auto; }
+      .goods .goods2 .goods2_c .goods2_c1 {
+        height: 363px; }
+        .goods .goods2 .goods2_c .goods2_c1 i {
+          background: url(../images/index/20180203_104424_000.png);
+          width: 40%;
+          height: 363px;
+          display: block;
+          background-size: 100% 363px;
+          float: left; }
+          .goods .goods2 .goods2_c .goods2_c1 i img {
+            width: 100%;
+            height: 100%; }
+        .goods .goods2 .goods2_c .goods2_c1 i:hover {
+          background-size: 110% 370px; }
+        .goods .goods2 .goods2_c .goods2_c1 ul {
+          width: 39%;
+          height: 363px;
+          float: left;
+          margin-left: 8px; }
+          .goods .goods2 .goods2_c .goods2_c1 ul li {
+            height: 179px;
+            width: 49%;
+            background-color: #f00;
+            float: left;
+            margin-right: 3px;
+            margin-bottom: 3px;
+            background: url(../images/index/20180203_104424_000.png);
+            background-size: 100% 100%; }
+          .goods .goods2 .goods2_c .goods2_c1 ul li:last-child {
+            padding-top: 20px;
+            padding-left: 10px;
+            position: relative; }
+            .goods .goods2 .goods2_c .goods2_c1 ul li:last-child p {
+              color: #fff;
+              font-size: 13px;
+              margin-bottom: 5px; }
+            .goods .goods2 .goods2_c .goods2_c1 ul li:last-child p:hover {
+              font-size: 14px; }
+            .goods .goods2 .goods2_c .goods2_c1 ul li:last-child button {
+              border: 1px solid #fff;
+              background-color: transparent;
+              color: #fff;
+              width: 104px;
+              height: 24px;
+              font-weight: bold;
+              position: absolute;
+              bottom: 10px;
+              left: 25%; }
+        .goods .goods2 .goods2_c .goods2_c1 img {
+          width: 20%;
+          float: right; }
+      .goods .goods2 .goods2_c .goods2_c2 .goods2_c2b {
+        width: 1080px;
+        margin: 0 auto;
+        height: 40px;
+        background-color: #fff;
+        margin-bottom: 5px; }
+        .goods .goods2 .goods2_c .goods2_c2 .goods2_c2b li {
+          float: left;
+          text-align: center;
+          line-height: 40px;
+          border-right: 2px solid #ccc;
+          font-weight: bold;
+          font-size: 18px; }
+        .goods .goods2 .goods2_c .goods2_c2 .goods2_c2b li:nth-child(1) {
+          width: 60%;
+          color: #E30165; }
+        .goods .goods2 .goods2_c .goods2_c2 .goods2_c2b li:nth-child(2) {
+          width: 20%; }
+        .goods .goods2 .goods2_c .goods2_c2 .goods2_c2b li:nth-child(3) {
+          width: 20%; }
+      .goods .goods2 .goods2_c .goods2_c2 img:nth-child(2) {
+        width: 40%; }
+      .goods .goods2 .goods2_c .goods2_c2 ul:nth-child(3) {
+        width: 60%;
+        height: 528px;
+        float: right; }
+        .goods .goods2 .goods2_c .goods2_c2 ul:nth-child(3) li {
+          float: left;
+          width: 33.3333%;
+          height: 264px; }
+          .goods .goods2 .goods2_c .goods2_c2 ul:nth-child(3) li img {
+            width: 100%; }
+      .goods .goods2 .goods2_c .goods_banner {
+        width: 1080px;
+        margin: 0 auto;
+        position: relative; }
+        .goods .goods2 .goods2_c .goods_banner i:first-child {
+          display: block;
+          position: absolute;
+          left: -60px;
+          top: 30%; }
+        .goods .goods2 .goods2_c .goods_banner i:last-child {
+          display: block;
+          position: absolute;
+          right: -60px;
+          top: 30%; }
+      .goods .goods2 .goods2_c .goods_bannner2 {
+        background-color: #E3E3E3;
+        width: 100%; }
+        .goods .goods2 .goods2_c .goods_bannner2 ul {
+          margin: 0 auto;
+          background-color: #E3E3E3;
+          height: 40px;
+          margin-top: 20px;
+          width: 670px; }
+          .goods .goods2 .goods2_c .goods_bannner2 ul li {
+            font-size: 18px;
+            font-weight: bold;
+            padding-left: 30px;
+            padding-right: 30px;
+            float: left;
+            background-color: #E3E3E3;
+            text-align: center;
+            border-right: 2px solid #000; }
+          .goods .goods2 .goods2_c .goods_bannner2 ul li:last-child {
+            border-right: none; }
+      .goods .goods2 .goods2_c .goods_banner3 ul {
+        width: 1080px;
+        margin: 0 auto;
+        height: 40px;
+        background-color: #FFF; }
+        .goods .goods2 .goods2_c .goods_banner3 ul li {
+          width: 33.33333%;
+          border-right: 1px solid #ccc;
+          float: left;
+          text-align: center;
+          height: 40px;
+          line-height: 40px;
+          font-size: 12px; }
+      .goods .goods2 .goods2_c .goods_banner4 {
+        width: 100%;
+        height: 600px; }
+        .goods .goods2 .goods2_c .goods_banner4 ul {
+          width: 10%;
+          height: 533px;
+          background-color: #FFF;
+          float: left; }
+          .goods .goods2 .goods2_c .goods_banner4 ul li {
+            height: 25%;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+            padding-top: 50px; }
+            .goods .goods2 .goods2_c .goods_banner4 ul li h2 {
+              font-size: 27px;
+              font-weight: bold; }
+            .goods .goods2 .goods2_c .goods_banner4 ul li p {
+              font-size: 8px;
+              font-weight: bold; }
+          .goods .goods2 .goods2_c .goods_banner4 ul li:last-child {
+            padding-top: 30px; }
+        .goods .goods2 .goods2_c .goods_banner4 div {
+          width: 90%;
+          float: right; }
+  .goods .goods3 {
+    width: 100%;
+    background-color: #FFF; }
+    .goods .goods3 .goods3_c {
+      width: 1080px;
+      margin: 0 auto; }
+
+.bottom {
+  width: 100%;
+  height: 440px; }
+  .bottom .link {
+    height: 143px;
+    width: 100%;
+    background-color: #DCDCDC; }
+    .bottom .link ul:first-child {
+      width: 1080px;
+      margin: 0 auto;
+      height: 143px;
+      padding-top: 10px; }
+      .bottom .link ul:first-child li {
+        height: 143px;
+        margin-right: 40px;
+        float: left;
+        font-size: 12px;
+        padding-left: 20px; }
+        .bottom .link ul:first-child li h3 {
+          font-size: 13px;
+          font-weight: bold;
+          line-height: 30px; }
+        .bottom .link ul:first-child li p {
+          line-height: 20px;
+          color: #7F7F7F; }
+      .bottom .link ul:first-child li:last-child {
+        float: right;
+        padding: 0;
+        margin: 0; }
+    .bottom .link ul:nth-child(2) {
+      width: 950px;
+      height: 70px;
+      margin: 0 auto; }
+      .bottom .link ul:nth-child(2) li {
+        float: left;
+        width: 236px;
+        height: 42px;
+        border-right: 1px solid #ccc;
+        padding-left: 20px; }
+        .bottom .link ul:nth-child(2) li i {
+          font-size: 42px;
+          color: #E30165;
+          display: block;
+          float: left;
+          margin-right: 5px; }
+        .bottom .link ul:nth-child(2) li h4 {
+          font-weight: bold;
+          padding-top: 5px; }
+        .bottom .link ul:nth-child(2) li p {
+          font-size: 10px;
+          color: #7f7f7f; }
+    .bottom .link b {
+      text-align: center;
+      font-size: 12px;
+      display: block;
+      margin-top: 45px;
+      font-weight: normal; }
+    .bottom .link span {
+      display: block;
+      text-align: center;
+      font-size: 12px;
+      color: #7f7f7f;
+      margin-top: 10px; }
+    .bottom .link span:nth-child(5) {
+      margin-top: 30px; }
+    .bottom .link div {
+      width: 1080px;
+      height: 30px;
+      margin: 0 auto;
+      border-top: 1px dotted #ccc;
+      margin-top: 35px;
+      font-size: 12px;
+      line-height: 30px;
+      border-bottom: 1px dotted #ccc;
+      color: #7f7f7f; }
+      .bottom .link div a {
+        color: #000; }

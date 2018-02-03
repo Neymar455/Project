@@ -29,18 +29,26 @@ h1{
         .container_r_b{
             width: 400px;height: 435px;border: 1px solid #DCDCDC;margin-left: 8px;
             .container_r_b_t{
-                height: 350px;padding-top: 31px;padding-left: 36px;
+                height: 350px;padding-top: 31px;padding-left: 36px;position: relative;
+                
+                i:nth-child(1){
+                    position: absolute;right: 0;top:0;
+                }
                 input{height: 40px;width: 324px;border:1px solid #DCDCDC; border-radius:5px;margin-bottom: 24px;}
                 p{
                     font-size: 14px;color:$fcolor;padding-right: 38px;
-                    i{
-                        color:$maincolor;display: block;float:right;font-size: 12px;
+                    span{
+                        color:$maincolor;display: block;float:right;font-size: 12px;margin-top: 3px;
                     }
                 }
                 button{width: 324px;background-color:$maincolor;height: 44px;margin-top: 24px;color:#fff;font-size: 16px;}
             }
             .container_r_b_b{
                 height: 85px;font-size: 14px;color:$fcolor;padding-left: 36px;
+                p{
+                    line-height: 23px;
+                    i{font-size: 30px;margin-right: 10px;margin-left: 10px;color:$maincolor;}
+                }
             }
         }
     }
