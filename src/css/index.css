@@ -386,6 +386,25 @@ body {
     .goods .goods3 .goods3_c {
       width: 1080px;
       margin: 0 auto; }
+      .goods .goods3 .goods3_c ul {
+        width: 1080px;
+        height: 380px;
+        margin-top: 10px; }
+        .goods .goods3 .goods3_c ul li {
+          width: 210px;
+          float: left;
+          margin-right: 7px; }
+          .goods .goods3 .goods3_c ul li img {
+            width: 100%; }
+          .goods .goods3 .goods3_c ul li h4 {
+            text-align: center;
+            line-height: 30px;
+            color: #808080; }
+          .goods .goods3 .goods3_c ul li p {
+            text-align: center; }
+        .goods .goods3 .goods3_c ul li:nth-child(5) {
+          margin-right: 0;
+          float: right; }
 
 .bottom {
   width: 100%;

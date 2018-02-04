@@ -251,6 +251,17 @@ body{
         width: 100%;background-color: #FFF;
         .goods3_c{
             width: 1080px;margin: 0 auto;
+            ul{
+                width: 1080px;height: 380px;margin-top: 10px;
+                li{
+                    width: 210px;float:left;
+                    margin-right: 7px;
+                    img{width: 100%;}
+                    h4{text-align: center;line-height: 30px;color:#808080;}
+                    p{text-align: center;}
+                }
+                li:nth-child(5){margin-right: 0;float:right;}
+            }
         }
     }
 }
