@@ -16,3 +16,11 @@ gulp.task('index',function(){
 gulp.task('jtindex',function(){
     gulp.watch('./src/sass/index.scss',['index'])
 })
+gulp.task('goods',function(){
+    gulp.src('./src/sass/goods.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./src/css/'))
+})
+gulp.task('jtgoods',function(){
+    gulp.watch('./src/sass/goods.scss',['goods'])
+})
