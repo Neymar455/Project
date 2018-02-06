@@ -24,3 +24,19 @@ gulp.task('goods',function(){
 gulp.task('jtgoods',function(){
     gulp.watch('./src/sass/goods.scss',['goods'])
 })
+gulp.task('details',function(){
+    gulp.src('./src/sass/details.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./src/css/'))
+})
+gulp.task('jtdetails',function(){
+    gulp.watch('./src/sass/details.scss',['details'])
+})
+gulp.task('car',function(){
+    gulp.src('./src/sass/car.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./src/css/'))
+})
+gulp.task('jtcar',function(){
+    gulp.watch('./src/sass/car.scss',['car'])
+})

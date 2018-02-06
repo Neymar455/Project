@@ -214,7 +214,7 @@
     margin-bottom: 20px;
     position: relative; }
     .choose .better div {
-      width: 108px;
+      width: 140px;
       height: 36px;
       background-color: #F8F8F8;
       font-size: 14px;
@@ -387,6 +387,9 @@
       line-height: 40px;
       margin-right: 20px;
       font-size: 20px; }
+    .goods .page .active {
+      background-color: #ccc;
+      color: #fff; }
 
 .bottom {
   width: 100%;

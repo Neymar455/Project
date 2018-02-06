@@ -3,7 +3,7 @@ require(['config'],function(){
         var goods_list =document.querySelector('.goods_list');
         var page = document.querySelector('.page');
         let pageNo = 1;
-        let qty = 3;
+        let qty = 30;
         var xhr = new XMLHttpRequest();
         xhr.onload = function(){
             if(xhr.status || xhr.status == 304){

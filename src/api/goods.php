@@ -21,7 +21,7 @@
      */
     $page_no = isset($_POST['pageNo']) ? $_POST['pageNo'] : 1;
     $qty = isset($_POST['qty']) ? $_POST['qty'] : 30;
-
+    
 
     $file_url = './data/goods.json';
 
