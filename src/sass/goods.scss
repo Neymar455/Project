@@ -87,7 +87,11 @@ $maincolor:#E30165;
         height: 114px;border:2px solid #D6D6D6;
         .brand_l{width: 108px;height: 110px;background-color:#F8F8F8;font-size: 14px;font-weight: bold;padding-top: 20px;padding-left: 30px;float:left;}
         ul{height: 91px;width: 807px;margin-left: 60px;border:1px solid #D6D6D6;float:left;margin-top: 10px;
-            li{float:left;height: 45px;width: 161px;line-height: 45px;text-align: center;border-left:1px solid #D6D6D6;border-bottom:1px solid #D6D6D6;font-size: 13px;}
+            li{
+                float:left;height: 45px;width: 161px;line-height: 45px;text-align: center;border-left:1px solid #D6D6D6;border-bottom:1px solid #D6D6D6;font-size: 13px;position: relative;
+                .active{position: absolute;top: 0;right: 0;left: 0;bottom: 0px;}
+                
+            }
             li:nth-child(1){border-left:none;}
             li:nth-child(6){border-left: none;}
         }

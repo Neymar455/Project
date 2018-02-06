@@ -7,7 +7,7 @@ require(['config'],function(){
         var xhr = new XMLHttpRequest();
         xhr.onload = function(){
             if(xhr.status || xhr.status == 304){
-                console.log(xhr.responseText);
+             
                 let res = JSON.parse(xhr.responseText);console.log(res)
 
                 let ul = document.createElement('ul');
@@ -62,6 +62,23 @@ require(['config'],function(){
                 xhr.open('post','../api/goods.php');
                 xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
                 xhr.send(`pageNo=${pageNo}&qty=${qty}`);
+            }
+        }
+
+        var $taggle = $('.taggle')[0];
+        console.log($taggle);
+        var li = $taggle.children;
+        console.log(li);
+        for(let i=0;i<li.length;i++){
+            li[i].onmouseenter = function(){
+                var img = document.createElement('img');
+                img.src = "../images/goods/l"+i+".png";
+                li[i].appendChild(img);
+                img.className = "active";
+            }
+            li[i].onmouseleave = function(){
+                console.log(li[i].lastChild);
+                li[i].removeChild(li[i].lastChild)
             }
         }
     })
