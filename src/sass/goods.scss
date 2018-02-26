@@ -1,6 +1,6 @@
 $maincolor:#E30165;
 .right{
-    width: 30px;background-color: #000000;height: 100%;
+    width: 30px;background-color: #000000;height: 100%;position: relative;
     position: fixed;right: 0;z-index:200;
     .right_p{
         position: relative;
@@ -19,9 +19,78 @@ $maincolor:#E30165;
     .right_b{
         padding-top: 10px;
         i{
-            color:#fff;font-size: 20px;display: block;height: 30px;width: 30px;text-align: center;line-height: 30px;
+            color:#fff;font-size: 20px;display: block;height: 60px;width: 30px;text-align: center;line-height: 30px;
         }
         i:nth-child(5){font-size: 12px;}
+    }
+    .person{
+        width: 200px;height: 200px;
+        position: absolute;left: -200px;top:100px;background-color: #FFF;display: none;
+        h4{text-align: center;margin-top: 30px;font-size: 12px;color:#ccc;}
+        i{
+            display: inline-block;width: 60px;height: 20px;border:1px solid $maincolor;color:$maincolor;margin-top: 20px;font-size: 12px;text-align: center;line-height: 20px;
+            a{
+                color:$maincolor;
+            }
+        }
+        i:nth-child(2){
+            margin-left: 40px;background-color:$maincolor;color:#fff;
+            a{
+                color:#fff;
+            }
+        }
+        i:nth-child(2):hover{
+            background-color: #FFF;
+            a{color:$maincolor;}
+        }
+        i:nth-child(3):hover{
+            background-color: $maincolor;;
+            a{color:#fff;}
+        }
+        div{width: 100px;float:left;margin-top: 20px;height: 20px;font-size: 12px;border:1px solid #ccc;text-align: center;background-color: #d8d8d8;}
+    }
+    .gouwuche{
+        height: 100%;width: 300px;background-color: #FFF;position: absolute;left: -300px;top: 0;display: none;
+        h3{
+            height: 40px;background-color: #ccc;line-height: 40px;padding-left: 20px;padding-right: 20px;
+            i{
+                font-size: 24px;display: inline-block;float:right;
+            }
+
+        }
+        .gc{
+            height: 500px;padding-left: 20px;padding-right: 20px;
+            h4{
+                height: 40px;border-bottom: 1px solid #ccc;line-height: 40px;font-size: 12px;
+            }
+            .scar{
+                ul{
+                    li{
+                        height: 60px;margin-top: 10px;margin-bottom: 10px;
+                        img{
+                           height: 60px;float:left;margin-right: 30px;
+                        }
+                        h5{width: 150px;display: inline-block;
+                            font-size: 12px;margin-bottom: 10px;}
+                        i{font-size: 12px;display: block;float:left;
+                        }
+                    }
+                }
+            }
+
+        }
+        .bt{
+            height: 130px;padding-left: 20px;padding-right: 20px;
+            h5{
+                height: 60px;line-height: 80px;font-size: 12px;
+                i:nth-child(2){
+                    display: inline-block;float:right;font-size: 18px;color:$maincolor;
+                }
+            }
+                        button{
+                width: 240px;height: 30px;background-color:$maincolor;margin-left: 10px;color:#fff;font-size: 20px;
+            }
+        }
     }
 }
 .top{

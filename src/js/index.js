@@ -157,7 +157,7 @@ require(['config'],function(){
                 var indexgood = JSON.parse(xhr.responseText);
                 good.innerHTML = indexgood.map(function(goods){
                     return `<li data-guid = "${goods.id}">
-                            <img src = "${goods.imgurl}"/>
+                            <img src = "${goods.img}"/>
                             <h4>${goods.name} </h4>
                             <i>
                             <p>￥<i>${goods.newprice}</i></p>
@@ -169,7 +169,85 @@ require(['config'],function(){
             like.appendChild(good);
             }
         }
-        xhr.open("get","./api/data/index.json",true);
+        xhr.open("get","./api/index.php",true);
         xhr.send();
+        // var xhr = new XMLHttpRequest();
+        // xhr.onload = function(){
+        //     console.log(xhr.responseText)
+        // }
+        // xhr.open('get','api/index.php',true);
+        // xhr.send();
+        
+
+        var scar = document.querySelector('.scar');
+        var zj = document.querySelector('.zj');
+
+        var goodslist = Cookie.get('goodslist');
+
+
+        if(goodslist.length===0){
+            goodslist = [];
+        }else{
+            goodslist = JSON.parse(goodslist);
+        }
+
+        console.log(goodslist);
+        render();
+        function render(){
+            
+            var all = 0;
+
+            // 根据数据生成html结构
+            var ul = document.createElement('ul');
+            ul.innerHTML = goodslist.map(function(item){
+                console.log(item);
+                all += item.price*item.qty;
+                return`<li data-id=${item.id}>
+                <img src="${item.imgurl}">
+                <h5>${item.name}</h5>
+                <i>￥${item.price} * ${item.qty}</i>
+                `
+            }).join('');
+
+            // 添加到页面
+            scar.innerHTML = '';
+            scar.appendChild(ul);
+
+            // 写入总价
+            zj.innerText = all.toFixed(2);
+        }
+        var person = document.querySelector('.person');
+        var gouwuche = document.querySelector('.gouwuche');
+        var per = document.querySelector('.icon-lianxiren');
+        var gouwu = document.querySelector('.right_c');
+        var del = document.querySelector('.shanchu')
+        console.log(gouwu);
+        per.onmouseenter = function(){
+            person.style.display = 'block';
+            person.onmouseenter = function(){
+                person.style.display = 'block';
+            }
+            person.onmouseleave = function(){
+                person.style.display = 'none';
+            }
+        };
+        per.onmouseleave = function(){
+            person.style.display = 'none';
+        };
+        gouwu.onmouseenter = function(){
+            gouwuche.style.display = 'block';
+            gouwuche.onmouseenter = function(){
+                gouwuche.style.display ='block';
+            }
+            gouwuche.onmouseleave = function(){
+                gouwuche.style.display ='none';
+            }
+        };
+        gouwu.onmouseleave = function(){
+            gouwuche.style.display = 'none';
+        };
+        del.onclick = function(){
+            gouwuche.style.display = 'none';
+        }
     })
 })

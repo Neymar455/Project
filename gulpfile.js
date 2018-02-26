@@ -1,12 +1,12 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-gulp.task('compileSass',function(){
+gulp.task('login',function(){
     gulp.src('./src/sass/login.scss')
     .pipe(sass())
     .pipe(gulp.dest('./src/css/'))
 })  
-gulp.task('jtSass',function(){
-    gulp.watch('./src/sass/login.scss',['compileSass'])
+gulp.task('jtlogin',function(){
+    gulp.watch('./src/sass/login.scss',['login'])
 })
 gulp.task('index',function(){
     gulp.src('./src/sass/index.scss')
@@ -39,4 +39,12 @@ gulp.task('car',function(){
 })
 gulp.task('jtcar',function(){
     gulp.watch('./src/sass/car.scss',['car'])
+})
+gulp.task('reg',function(){
+    gulp.src('./src/sass/reg.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./src/css/'))
+})
+gulp.task('jtreg',function(){
+    gulp.watch('./src/sass/reg.scss',['reg'])
 })

@@ -28,6 +28,9 @@ $maincolor:#E30165;
                 i{
                     display: block;width: 169px;height: 25px;border-right: 1px solid #ccc;float:left;font-size: 12px;line-height: 25px;text-align: center;color:#ccc;
                 }
+                i:nth-child(1){
+                    background-color:$maincolor;color:#fff;
+                }
                 
             }
     }
@@ -52,6 +55,45 @@ $maincolor:#E30165;
             }
         }
         
+    }
+    .shoppingcar{
+            width: 1080px;margin: 0 auto;
+            border-right: 1px solid #ccc;border-left: 1px solid #ccc;
+            ul{
+                width: 1080px;margin: 0 auto;
+                li{
+                    width: 1000px;margin: 0 auto;
+                    height: 100px;border-bottom: 1px solid #ccc;padding-left: 10px;
+                    img{
+                        height: 80px;margin-left: 150px;
+                        margin-top: 10px;
+                    }
+                    h5{
+                        display:inline-block;font-size: 14px;
+                    }
+                    i:nth-child(4){
+                        display: inline-block;margin-left: 60px;font-size: 13px;
+                    }
+                    i:nth-child(5){
+                        display: inline-block;width: 15px;height: 30px;border:1px solid #ccc;margin-left: 45px;line-height: 24px;
+                        
+                    }
+                    i:nth-child(6){
+                        display: inline-block;line-height: 24px;
+                            height: 30px;width: 40px;border:1px solid #ccc;text-align: center;
+                    }
+                    i:nth-child(7){
+                        display: inline-block;width: 15px;height: 30px;border:1px solid #ccc;
+                        line-height: 24px;
+                    }
+                    span{
+                        display: inline-block;margin-left: 40px;
+                    }
+                    b{
+                        display: inline-block;float:right;margin-right: 50px;color:#f00;line-height: 90px;font-size: 20px;
+                    }
+                }
+            }
     }
     .erweima{
             height: 173px;width: 1080px;border:1px solid #ccc;margin: 0 auto;

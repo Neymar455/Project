@@ -31,16 +31,16 @@ h1 {
         float: left; }
       .container .container_r .container_r_t i:nth-child(1) {
         display: block;
+        width: 64px;
+        margin-left: 65px;
+        margin-right: 130px; }
+      .container .container_r .container_r_t i:nth-child(2) {
+        display: block;
         width: 60px;
         color: #000;
         border-bottom: 1px solid #000;
         height: 63px;
-        text-align: center;
-        margin-left: 50px; }
-      .container .container_r .container_r_t i:nth-child(2) {
-        display: block;
-        width: 80px;
-        margin-left: 100px; }
+        text-align: center; }
     .container .container_r .container_r_b {
       width: 400px;
       height: 435px;
@@ -67,12 +67,11 @@ h1 {
           width: 324px;
           border: 1px solid #DCDCDC;
           border-radius: 5px;
-          margin-bottom: 24px;
+          margin-bottom: 18px;
           padding-left: 10px; }
+        .container .container_r .container_r_b .container_r_b_t input:nth-child(12) {
+          width: 100px; }
         .container .container_r .container_r_b .container_r_b_t .dui {
-          color: #58ba58;
-          padding-left: 10px; }
-        .container .container_r .container_r_b .container_r_b_t .dui1 {
           color: #58ba58;
           padding-left: 10px; }
         .container .container_r .container_r_b .container_r_b_t p {
@@ -85,8 +84,16 @@ h1 {
             float: right;
             font-size: 12px;
             margin-top: 3px; }
-            .container .container_r .container_r_b .container_r_b_t p span a {
-              color: #E30165; }
+        .container .container_r .container_r_b .container_r_b_t span {
+          display: inline-block;
+          height: 40px;
+          width: 100px;
+          border: 1px solid #ccc;
+          float: right;
+          margin-right: 40px;
+          text-align: center;
+          font-size: 20px;
+          line-height: 40px; }
         .container .container_r .container_r_b .container_r_b_t button {
           width: 324px;
           background-color: #E30165;

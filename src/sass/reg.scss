@@ -20,10 +20,11 @@ h1{
                 font-size: 15px;color:$fcolor;float:left;
             }
             i:nth-child(1){
-                display: block;width: 60px;color:#000;border-bottom: 1px solid #000;height: 63px;text-align: center;margin-left: 50px;
+                display: block;width: 64px;margin-left: 65px;margin-right: 130px;
             }
             i:nth-child(2){
-                display: block;width: 80px;margin-left: 100px;
+                display: block;width: 60px;color:#000;border-bottom: 1px solid #000;height: 63px;text-align: center;
+
             }
         }
         .container_r_b{
@@ -38,24 +39,22 @@ h1{
                     height: 324px;height: 20px;display: none;color:#f00;font-size: 12px;margin-top: -10px;
                 }
                 input{
-                    height: 40px;width: 324px;border:1px solid #DCDCDC; border-radius:5px;margin-bottom: 24px;padding-left: 10px;
-
+                    height: 40px;width: 324px;border:1px solid #DCDCDC; border-radius:5px;margin-bottom: 18px;padding-left: 10px;
+                
+                }
+                input:nth-child(12){
+                    width: 100px;
                 }
                 .dui{
-                    color:#58ba58;padding-left: 10px;
-                }
-                .dui1{
                     color:#58ba58;padding-left: 10px;
                 }
                 p{
                     font-size: 14px;color:$fcolor;padding-right: 38px;
                     span{
                         color:$maincolor;display: block;float:right;font-size: 12px;margin-top: 3px;
-                        a{
-                            color:$maincolor;
-                        }
                     }
                 }
+                span{display: inline-block;height: 40px;width: 100px;border:1px solid #ccc;float:right;margin-right: 40px;text-align: center;font-size: 20px;line-height: 40px;}
                 button{width: 324px;background-color:$maincolor;height: 44px;margin-top: 24px;color:#fff;font-size: 16px;}
             }
             .container_r_b_b{

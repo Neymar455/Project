@@ -5,6 +5,7 @@
         <title>详情页</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/details.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/jquery.gdsZoom/jquery.gdsZoom.css" />
     <link rel="stylesheet" type="text/css" href="../font_vgy24g31llt0529/iconfont.css" />
     <script src="../js/require.js" data-main='../js/details'></script>
     </head>
@@ -22,7 +23,32 @@
             <i class="iconfont icon-weixin"></i>
             <i class="iconfont icon-erji"></i>
             <i class="iconfont icon-erweima"></i>
-            <i class="iconfont icon-top">TOP</i>
+            <i ><a href="#">TOP</a></i>
+        </div>
+        <div class='person'>
+          <h4><img src="../images/right/default-head.jpg" height="70" width="70" alt="" /><p>请先登录哟</p></h4>
+          <i><a href="login.html">登陆</a></i>
+          <i><a href="reg.html">注册</a></i>
+          <div>我的订单</div>
+          <div>我的收藏</div>
+        </div>
+        <div class="gouwuche">
+          <h3>购物车 <i class="shanchu">&times;</i></h3>
+          <div class="gc">
+            <h4>梦芭莎</h4>
+            <div class="scar">
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+          <div class="bt">
+            <h5>
+              共<i class="qtyy"></i>件商品
+              <i class="zj">1888</i>
+            </h5>
+            <button><a href="car.html">去购物车结算</a></button>
+          </div>
         </div>
     </div>
     <div class="top">
@@ -33,7 +59,7 @@
                 </p>
                 <ul>
                     <li>欢迎光临浪莎芭！</li>
-                    <li><a href="html/login.html">登陆</a></li>
+                    <li><a href="login.html">登陆</a></li>
                     <li><a href="">注册</a></li>
                     <li><a href="">微信</a></li>
                     <li><a href="">微博</a></li>
@@ -44,7 +70,7 @@
         </div>
         <div class="top_s">
             <div class="container">
-                <img src="../images/index/logo.png" height="125" width="273" alt="" />
+                <img src="../images/index/logo.png" height="125" width="273"/>
                 <div class="search">
                     <input type="text" placeholder=" 年货痛快之旅已开启！18春新品新增50款，让你焕然变装！"/>
                 <button>搜索</button>
@@ -70,7 +96,7 @@
         <div class="del">
             <ul>
                 <li>全部商品分类</li>
-                <li>首页</li>
+                <li><a href="../index.html">首页</a></li>
                 <li>T恤背心</li>
                 <li>裙装</li>
                 <li>衬衫</li>
@@ -83,35 +109,37 @@
         <div class="container">
             <h5><a href="../index.html">首页</a> > <a href="">裙装</a> > <a href="">连衣裙</a> > <a href="">连衣裙</a></h5>
             <div class="container_l">
-                <div>
-                    <img src="../images/details/a2.jpg" height="520" width="100%" alt="" />
+                <div class="pic">
+                    <img src="" height="520" width="100%" data-big="" />
                 </div>
                 <ul>
                     <i> < </i>
+                    <div class="smallList">
+                    <li><img src="../images/details/a2.jpg"/ class="spic"></li>
                     <li><img src="../images/details/a2.jpg"/></li>
                     <li><img src="../images/details/a2.jpg"/></li>
                     <li><img src="../images/details/a2.jpg"/></li>
                     <li><img src="../images/details/a2.jpg"/></li>
-                    <li><img src="../images/details/a2.jpg"/></li>
+                    </div>
                     <i> > </i>
                 </ul>
                 <p>商品编号:727016020   <i class="iconfont icon-xin">收藏</i></p>
             </div>
             <div class="container_m">
-                <h3>FRIZZ女装时尚学院风下摆荷叶边无袖印花背心圆领连衣裙</h3>
+                <h3 class="name"></h3>
                 <div>
                     <h2>
                         <i>￥</i>
-                        <i>99</i>
+                        <i class="newprice"></i>
                         <i>
                             <i>3.7折</i>
-                            <i>￥269</i>
+                            <i class="price"></i>
                         </i>
                         <i>
                         <img src="../images/details/a4.gif" height="38" width="45" alt="" />
                         手机便捷购买</i>
                     </h2>
-                    <p>评论 （5） 条</p>
+                    <p>评论 （<b class="comment">5</b>） 条</p>
                 </div>
                 <div class="color">
                     颜色
@@ -211,7 +239,7 @@
                 <div class="comment_rt">
                     <h2>
                         <a href="">商品详情</a>
-                        <a href="">评价</a>
+                        <a href="">评价(<b class="commentt"></b>)</a>
                         <a href="">如何支付</a>
                         <a href="">7天无条件退货</a>
                     </h2>
